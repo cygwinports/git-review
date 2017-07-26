@@ -1,0 +1,16 @@
+inherit python3-distutils
+
+NAME="git-review"
+VERSION=1.25.0
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Git command for Gerrit submissions"
+DESCRIPTION="git-review is a tool that helps submitting git branches to Gerrit
+for review."
+HOMEPAGE="https://github.com/openstack-infra/git-review"
+SRC_URI="http://tarballs.openstack.org/git-review/git-review-${VERSION}.tar.gz"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/rpms/git-review.git/plain/git-review-1.25-no_git_dir.patch"
+
+ARCH=noarch
+
+REQUIRES="git"
